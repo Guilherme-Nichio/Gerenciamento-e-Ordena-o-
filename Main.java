@@ -148,22 +148,23 @@ public class Main {
     public static void main(String[] args) {
         ListaCircularDeProcessos lista = new ListaCircularDeProcessos();
 
-        lista.inserirProcesso(1, 3, "executar calculadora");
-        lista.inserirProcesso(2, 1, "executar navegador Chrome");
-        lista.inserirProcesso(3, 5, "executar programa em Java");
-        lista.inserirProcesso(4, 2, "executar o Word");
+        lista.inserirProcesso(1, 3, "Abrir o Valorant");
+        lista.inserirProcesso(2, 1, "Abrir o paint");
+        lista.inserirProcesso(3, 5, "Abrir o explorer");
+        lista.inserirProcesso(4, 2, "Abrir o Opera");
 
-        System.out.println("Antes da ordenação:");
+        System.out.println("Antes da ordenacao:");
         lista.percorrerEImprimir();
 
         lista.ordenarPorPrioridade();
 
-        System.out.println("\nApós ordenação por prioridade:");
+        System.out.println("\nApos ordenacao por prioridade:");
         lista.percorrerEImprimir();
 
         lista.removerProcesso(3);
 
-        System.out.println("\nApós remoção do processo com ID 3:");
+        System.out.println("\nApos remocao do processo com ID 3:");
         lista.percorrerEImprimir();
     }
 }
+
